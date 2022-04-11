@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: prom-metric-generator
+  labels:
+    app: prom-metric-generator
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+    name: metrics
+  selector:
+    app: prom-metric-generator
