@@ -6,11 +6,9 @@ metrics:
     sequences:
       - label_values: [v3, v4]
         interval: 10
-        value: 10
         operation: inc
       - label_values: [v5, v6]
         interval: 10
-        value: 1
         operation: dec
       - label_values: [v1, v2]
         interval: 10
